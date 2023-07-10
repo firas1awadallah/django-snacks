@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.flowbite.com/flowbite.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-gray-200">
+        <nav class="flex justify-center py-4">
+            <a href="{% url 'home' %}" class="mr-4">HOME</a>
+            <a href="{% url 'about'%}">ABOUT</a>
+        </nav>
+    </header>
+    {% block content%}
+    {% endblock%}
+    
+</body>
+</html>
