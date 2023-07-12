@@ -1,15 +1,15 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.flowbite.com/flowbite.css" rel="stylesheet">
-
     <title>Document</title>
+    <link rel="stylesheet" href="{%  static 'css/home.css'%}">
 </head>
 <body>
-    <header class="bg-gray-200">
-        <nav class="flex justify-center py-4">
+    <header>
+        <nav>
             <a href="{% url 'home' %}" class="mr-4">HOME</a>
             <a href="{% url 'about'%}">ABOUT</a>
         </nav>
